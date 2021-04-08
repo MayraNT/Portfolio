@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #403c41;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 5%;
+}
+
+section {
+  width: 90%;
+  margin: 20px 0;
+  padding: 10px 50px 50px 50px;
+  border-radius: 20px;
+}
+
+.sectionTitle {
+  font-family: 'Prata', serif;
+  font-size: 65px;
+}
+
+.landing {
+  height: 40vh;
+}
+
+.about {
+  /* background-color: rgb(180, 150, 207); */
+  border: solid rgb(180, 150, 207);
+}
+
+.resume {
+  /* background-color: rgb(1, 158, 111); */
+  border: solid rgb(1, 158, 111);
+}
+
+.portfolioGallery {
+  /* background-color: rgb(224, 169, 211); */
+  border: solid rgb(224, 169, 211);
+}
+
+.contact {
+  /* background-color: rgb(11, 80, 57); */
+  border: solid rgb(11, 80, 57);
+}
+
