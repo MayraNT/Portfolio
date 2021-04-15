@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(169, 188, 224);
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  height: 11in;
+  width: 8.5in;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 3fr 7fr;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 5px 1px rgba(68, 68, 90, 0.233);
+}
+
+.main-container header {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 25px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-container .contact-info {
+  box-sizing: border-box;
+  padding-top: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(40, 57, 88);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.contact-info h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+  font-family: 'Courier Prime', monospace;
+  font-size: 20px;
+  letter-spacing: 7px;
+}
+
+.contact-info .contact-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+}
+
+.main-container .history {
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 50px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.history h3 {
+  color: rgb(40, 57, 88);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(40, 57, 88);
+  font-family: 'Courier Prime', monospace;
+  letter-spacing: 5px;
+}
+
+#picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px 1px rgba(68, 68, 90, 0.329);
+  /* z-index: 100;
+  position: absolute;
+  top: 35px; */
+}
+
+header .bio {
+  padding-right: 20px;
+  color: rgb(40, 57, 88);
+  position: relative;
+}
+
+.bio p {
+  margin-top: 0;
+  padding-top: 35px;
+  border-top: solid rgb(40, 57, 88) 2px;
+}
+
+#name {
+  margin-bottom: 0;
+  color: rgb(40, 57, 88);
+  text-transform: uppercase;
+  font-family: 'Candal', sans-serif;
+  font-size: 50px;
+  padding-bottom: 15px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: #2A0A5A;
+  font-family: 'Courier Prime', monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.title, .subtitle {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 14px;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.subtitle {
+  font-weight: 200;
+}
+
+p, li {
+  font-family: 'Courier Prime', monospace;
+  font-size: 14px;
+}
+
+article {
+  padding-bottom: 20px;
+}
