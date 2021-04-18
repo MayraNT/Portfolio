@@ -22,7 +22,6 @@ body {
   height: 50px;
   font-size: 55px;
   line-height: 1.32;
-  font-family: 'Halant', serif;
 }
 
 a {
@@ -30,48 +29,37 @@ a {
   color: rgb(48, 48, 48);
 }
 
-.landing {
-  padding-top: 25%;
-  background-color: rgb(48, 48, 48);
-  color: white;
+/* ///// MAIN ///// */
+section {
+  height: 50vh;
+  margin: 15px;
 }
 
-#landing-btn {
-  color: white;
-}
-
-.sectionTitle {
-  font-size: 65px;
-  /* mix-blend-mode: difference; */
-}
-
-.portfolio, .contact {
-  font-family: 'Halant', serif;
-  color: rgb(95, 134, 108);
-}
-
-.resume {
-  font-family: 'Halant', serif;
-  color: rgb(169, 188, 224);
-}
-
-.about {
-  font-family: 'Halant', serif;
-  color: rgb(196, 129, 30);
-}
-
-/* ///// FOOTER BEGIN ///// */
-.footer-nav {
+/* ///// FOOTER ///// */
+.nav {
   width: 100%;
   background-color: black;
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Halant', serif;
 }
 
-.footer-nav a {
+.nav a {
   font-size: 30px;
 }
 
 .footer-icons {
   height: 45px;
+}
+
+.about {
+  background-color: rgb(169, 188, 224);
+}
+
+.resume {
+  background-color: rgb(95, 134, 108);
+}
+
+.portfolio {
+  background-color: rgb(196, 129, 30);
 }
