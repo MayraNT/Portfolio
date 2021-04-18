@@ -7,75 +7,78 @@
   <link rel="stylesheet" href="./reset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Prata&family=Shrikhand&family=Halant:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/434da06752.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles.css">
   <title>M. Téllez Portfolio Site</title>
 </head>
 <body>
   <div class="mainContainer">
-    <!-- <header>
-      <div class="nav">
+    <header>
+      <div class="nav" id="topOfPage">
         <div>
-          <a href="">
-            <span class="portfolio">p</span>
+          <a href="#portfolioSection">
+            <span>p</span>
           </a>
         </div>
         <div >
-          <a href="">
-            <span class="about">a</span>
+          <a href="#aboutSection">
+            <span>a</span>
           </a>
         </div>
         <div>
-          <a href="">
-            <span class="resume">r</span>
+          <a href="#resumeSection">
+            <span>r</span>
           </a>
         </div>
         <div>
-          <a href="">
-            <span class="contact">c</span>
+          <a href="#contactSection">
+            <span>c</span>
           </a>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="landing">
+      <section>
         <div>
-          <span>Mayra Téllez</span>
-          <h2>Student of Web Development</h2>
-          <a href="" id="landing-btn">View my Work</a>
+          <span class="sectionTitle">I'm Mayra Téllez</span>
+          <h2>A Student of Web Development</h2>
         </div>
-      </section> -->
-      <div class="sectionContent">
-        <section class="portfolio" onmouseover="expand()" onmouseout="shrink()">
-          <span>portfolio</span>
+      </section>
+      <div class="sectionsContainer">
+        <section class="portfolio" id="portfolioSection">
+          <span class="sectionTitle">portfolio</span>
           <img src="" alt="">
-          <a href="">All Projects</a>
+          <a href="./portfolioGallery/portfolioGallery.html">All Projects</a>
         </section>  
-        <section class="about">
-          <span>about</span>
+        <section class="about" id="aboutSection">
+          <span class="sectionTitle">about</span>
           <p>Based in Austin, TX. Studying Full Stack Web Development at Austin Coding Academy. This is my portfolio!</p>
         </section>
-        <section class="resume">
-          <span>resume</span>
+        <section class="resume" id="resumeSection">
+          <span class="sectionTitle">resume</span>
           <img src="" alt="" id="resumeSnap">
-          <a href="" class="button">View</a>
+          <a href="./resumePage/resume.html" class="button">View</a>
           <a href="" class="button">Download</a>
         </section>  
-        <section>
-          <span>contact</span>
+        <section id="contactSection">
+          <span class="sectionTitle">contact</span>
           <p>email</p>
           <p>linkedIn</p>
         </section>
       </div>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="nav">
-        <a class="portfolio" href="">portfolio</a>
-        <a class="about" href="">about</a>
-        <a class="resume" href="">resume</a>
-        <a class="contact" href="">contact</a>
+        <a href="#topOfPage">back to top</a>
       </div>
-      <div class="footer-icons"></div>
-    </footer> -->
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/mayra-t%C3%A9llez-b3b015b6/"><i class="fab fa-linkedin-in"></i></a>
+        <i class="far fa-grin"></i>
+        <a href="https://github.com/MayraNT">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
