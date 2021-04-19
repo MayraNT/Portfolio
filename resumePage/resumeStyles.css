@@ -15,7 +15,7 @@ body {
   font-family: 'Halant', serif;
   font-size: 22px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .a {
