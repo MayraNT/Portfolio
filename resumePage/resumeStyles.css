@@ -1,8 +1,49 @@
 body {
+  margin: 0;
   background-color: rgb(169, 188, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ///// NAV ///// */
+
+.nav {
+  width: 100%;
+  background-color: black;
+  font-family: 'Halant', serif;
+  font-size: 22px;
   display: flex;
   justify-content: center;
 }
+
+.a {
+  color: rgb(95, 134, 108);
+}
+
+.r {
+  color: rgb(169, 188, 224);
+}
+
+.p {
+  color: rgb(196, 129, 30);
+}
+
+.c {
+  color: rgb(194, 153, 92);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover:hover {
+  color: white;
+  transition: color ease .5s;
+}
+
+/* ///// MAIN ///// */
 
 .main-container {
   height: auto;

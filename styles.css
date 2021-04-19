@@ -232,6 +232,11 @@ a {
 
 .footer-icons a {
   padding: 8px;
+  transition: color .3s ease;
+}
+
+.footer-icons a:hover {
+  color: gray;
 }
 
 footer .nav {
@@ -245,6 +250,7 @@ footer .nav {
 }
 
 .r {
+  transition: color ease .5s;
   color: rgb(169, 188, 224);
 }
 
@@ -253,6 +259,7 @@ footer .nav {
 }
 
 .a {
+  transition: color ease .5s;
   color: rgb(95, 134, 108);
 }
 
@@ -261,6 +268,7 @@ footer .nav {
 }
 
 .p {
+  transition: color ease .5s;
   color: rgb(196, 129, 30);
 }
 
@@ -269,7 +277,13 @@ footer .nav {
 }
 
 .c {
+  transition: color ease .5s;
   color: rgb(194, 153, 92);
+}
+
+.hover:hover {
+  color: white;
+  transition: color ease .5s;
 }
 
 /* ///// BUTTONS ///// */

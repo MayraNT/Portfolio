@@ -1,8 +1,12 @@
-body {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body { 
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -13,45 +17,46 @@ p {
   font-family: 'Nunito';
 }
 
-/* ///// NAV BEGIN ///// */
+/* ///// NAV ///// */
 
-.nav-bar {
-  padding-right: 5%;
-  margin-top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: fixed;
-  background-color: rgb(48, 48, 48);
-  width: 100%;
-  height: 50px;
-  font-size: 55px;
-  line-height: 1.32;
+.nav {
+  background-color: black;
   font-family: 'Halant', serif;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
 }
 
-.portfolio, .contact {
+.a {
   color: rgb(95, 134, 108);
 }
 
-.resume {
+.r {
   color: rgb(169, 188, 224);
 }
 
-.about {
+.p {
   color: rgb(196, 129, 30);
+}
+
+.c {
+  color: rgb(194, 153, 92);
 }
 
 a {
   text-decoration: none;
 }
 
+.hover:hover {
+  color: white;
+  transition: color ease .5s;
+}
+
 /* ///// CARDS ///// */
 
 .container {
-  margin-top: 75px;
+  margin-top: 70px;
   position: relative;
-  width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +68,7 @@ a {
   border-radius: 4px;
   position: relative;
   max-width: 300px;
-  height: 185px;
+  height: 210px;
   background: rgb(95, 134, 108);
   margin: 30px 10px;
   padding: 20px 15px;
