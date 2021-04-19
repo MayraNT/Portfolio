@@ -32,10 +32,14 @@ a {
 }
 
 /* ///// MAIN ///// */
+
+.landing {
+  padding: 20px;
+}
+
 .sectionsContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 section {
@@ -50,6 +54,7 @@ section {
 }
 
 /* ///// FOOTER ///// */
+
 .nav {
   width: 100%;
   background-color: black;
@@ -91,4 +96,38 @@ section {
 
 .portfolio {
   background-color: rgb(196, 129, 30);
+}
+
+.button {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  background-color: whitesmoke;
+  color: black;
+  border: solid 2px black;;
+  transition: .5s ease;
+}
+
+/* ///// RESPONSIVE ///// */
+
+@media (min-width: 576px) {
+  .sectionsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
 }
