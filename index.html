@@ -14,67 +14,64 @@
 <body>
   <div class="mainContainer">
     <header>
-      <div class="nav" id="topOfPage">
-        <div>
-          <a href="#portfolioSection">
-            <span>portfolio</span>
-          </a>
-        </div>
-        <div >
-          <a href="#aboutSection">
-            <span>about</span>
-          </a>
-        </div>
-        <div>
-          <a href="#resumeSection">
-            <span>resume</span>
-          </a>
-        </div>
-        <div>
-          <a href="#contactSection">
-            <span>contact</span>
-          </a>
-        </div>
+      <div class="nav bar" id="topOfPage">
+        <a href="#portfolioSection" class="p">portfolio</a>
+        <a href="#resumeSection" class="r">resume</a>
+        <a href="#aboutSection" class="a">about</a>
+        <a href="#contactSection" class="c">contact</a>
       </div>
     </header>
     <main>
       <div class="landing">
+        <span class="sectionTitle hello">hello!</span>
         <span class="sectionTitle">I'm Mayra Téllez</span>
-        <p>A Student of Web Development. This is my Portfolio Site.</p>
+        <span class="subtitle">Student of Web Development</span>
       </div>
+      <div id="line"></div>
       <div class="sectionsContainer">
         <section class="portfolio" id="portfolioSection">
           <span class="sectionTitle">portfolio</span>
-          <img src="" alt="">
+          <div>
+            <img src="./images/barberImg.JPG" alt="image of barbershop template website">
+            <img src="./images/galleryImg.JPG" alt="image of photo gallery">
+          </div>
           <a href="./portfolioGallery/portfolioGallery.html" class="button">All Projects</a>
-        </section>  
-        <section class="about" id="aboutSection">
-          <span class="sectionTitle">about</span>
-          <p>Based in Austin, TX. Studying Full Stack Web Development at Austin Coding Academy. This is my portfolio!</p>
         </section>
         <section class="resume" id="resumeSection">
           <span class="sectionTitle">resume</span>
-          <img src="" alt="" id="resumeSnap">
+          <img src="./images/resumeSnap.JPG" alt="image of portion of mayra's resume" id="resumeSnap">
           <a href="./resumePage/resume.html" class="button">View</a>
-        </section>  
-        <section id="contactSection">
+        </section>    
+        <section class="about" id="aboutSection">
+          <span class="sectionTitle">about</span>
+          <div class="img-container">
+            <img id="aboutImg" src="./images/aboutImg.jpg" alt="photo of mayra and her dog">
+            <div class="overlay">
+              <div class="paragraph">
+                <p>Based in Austin, TX.<br>Studying Full Stack Web Development at Austin Coding Academy.<br>I enjoy the outdoors and hanging with my dog, Bella.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contactSection">
           <span class="sectionTitle">contact</span>
-          <p>phone</p>
-          <p>email</p>
-          <p class="button">linkedIn</p>
+          <i class="fas fa-address-card fa-3x"></i>
+          <p><span>text or call</span> (210) 385-3133</p>
+          <p><span>email</span> mayrant2004@yahoo.com</p>
+          <a href="https://www.linkedin.com/in/mayra-t%C3%A9llez-b3b015b6/" class="button">linkedIn</a>
         </section>
       </div>
     </main>
     <footer>
-      <div class="nav">
-        <a href="#topOfPage">back to top</a>
-      </div>
       <div class="footer-icons">
         <a href="https://www.linkedin.com/in/mayra-t%C3%A9llez-b3b015b6/"><i class="fab fa-linkedin-in"></i></a>
         <i class="far fa-grin"></i>
         <a href="https://github.com/MayraNT">
           <i class="fab fa-github"></i>
         </a>
+      </div>
+      <div class="nav">
+        <a href="#topOfPage"><span class="r">back</span><span class="p">to</span><span class="a">top</span></a>
       </div>
     </footer>
   </div>
