@@ -5,14 +5,14 @@ body {
 }
 
 .main-container {
-  height: 11in;
+  height: auto;
   width: 8.5in;
   margin-top: 2%;
   margin-bottom: 5%;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 3fr 7fr;
+  grid-template-rows: 2fr 8fr;
   background-color: whitesmoke;
   box-shadow: 10px 10px 5px 1px rgba(68, 68, 90, 0.233);
 }
@@ -29,16 +29,21 @@ body {
 
 .main-container .contact-info {
   box-sizing: border-box;
-  padding-top: 250px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   grid-column: 1/2;
   grid-row: 1/3;
   background-color: rgb(40, 57, 88);
-  text-align: center;
   color: white;
-  font-size: 13px;
   line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+.contact-info i {
+  padding-top: 30px;
 }
 
 .contact-info h4 {
@@ -49,15 +54,10 @@ body {
   letter-spacing: 7px;
 }
 
-.contact-info .contact-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-}
-
 .main-container .history {
   box-sizing: border-box;
   padding-left: 30px;
-  padding-right: 50px;
+  padding-right: 30px;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -65,30 +65,30 @@ body {
 .history h3 {
   color: rgb(40, 57, 88);
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgb(40, 57, 88);
   font-family: 'Courier Prime', monospace;
   letter-spacing: 5px;
 }
 
 #picture {
+  margin-bottom: 20px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 2px 2px 5px 1px rgba(68, 68, 90, 0.329);
-  /* z-index: 100;
-  position: absolute;
-  top: 35px; */
 }
 
-header .bio {
+header {
   padding-right: 20px;
   color: rgb(40, 57, 88);
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .bio p {
+  font-size: 13px;
   margin-top: 0;
   padding-top: 35px;
   border-top: solid rgb(40, 57, 88) 2px;
@@ -127,10 +127,11 @@ h2 {
 }
 
 p, li {
-  font-family: 'Courier Prime', monospace;
-  font-size: 14px;
+  font-size: 13.5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-article {
-  padding-bottom: 20px;
+a {
+  text-decoration: none;
+  color: white;
 }
