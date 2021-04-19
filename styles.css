@@ -99,7 +99,7 @@ section {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   text-align: center;
   box-shadow: 2px 2px 5px rgb(124, 124, 124);
