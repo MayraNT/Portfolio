@@ -47,7 +47,7 @@ a {
 
 .main-container {
   height: auto;
-  width: 8.5in;
+  width: 55%;
   margin-top: 2%;
   margin-bottom: 5%;
   box-sizing: border-box;
@@ -114,8 +114,6 @@ a {
 
 #picture {
   margin-bottom: 20px;
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 2px 2px 5px 1px rgba(68, 68, 90, 0.329);
@@ -176,3 +174,26 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/* ///// RESPONSIVE ///// */
+
+@media (min-width: 320px) {
+  .main-container {
+    width: 95%;
+  } 
+  #picture {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    max-width: 8.5in;
+  }  
+  #picture {
+    width: 200px;
+  height: 200px;
+  }
+}
+
