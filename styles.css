@@ -19,6 +19,8 @@ body {
   font-size: 22px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1;
 }
 
 .bar a {
@@ -161,6 +163,7 @@ a {
 /* ///// ABOUT SECTION ///// */
 
 #aboutSection p {
+  width: 50vw;
   font-size: 18px;
   margin-bottom: 20px;
   padding: 0 40px;
@@ -169,7 +172,7 @@ a {
 
 #aboutImg {
   height: 300px;
-  width: 100%;
+  width: 50vw;
   object-fit: cover;
   object-position: center;
 }
@@ -310,9 +313,18 @@ footer .nav {
 
 /* ///// RESPONSIVE ///// */
 
+@media (min-width: 375px) {
+  #aboutImg {
+    width: 100vw;
+  }
+}
+
 @media (min-width: 576px) {
   .sectionsContainer {
     grid-template-columns: 1fr;
+  }
+  #aboutImg {
+    width: 100vw;
   }
 }
 
