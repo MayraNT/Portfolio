@@ -52,8 +52,8 @@ a {
   margin-bottom: 5%;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 2fr 8fr;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 2fr 8.5fr;
   background-color: whitesmoke;
   box-shadow: 10px 10px 5px 1px rgba(68, 68, 90, 0.233);
 }
