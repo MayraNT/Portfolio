@@ -57,7 +57,7 @@ main {
   color: whitesmoke;
   animation-name: rotate, colors;
   animation-duration: 10s;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -121,7 +121,6 @@ a {
 
 .portfolio img {
   height: 150px;
-  width: 45%;
   object-fit: cover;
   object-position: top;
   margin: 15px 5px 25px 5px;
@@ -133,6 +132,10 @@ a {
 
 .portfolio img:hover {
   opacity: 1;
+}
+
+.link {
+  width: 45%;
 }
 
 .portfolio div {
