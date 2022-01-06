@@ -46,7 +46,7 @@ main {
 }
 
 .hello {
-  margin-bottom: 30px;
+  margin: 30px 0;
   height: 190px;
   width: 190px;
   background-color: black;
@@ -125,7 +125,6 @@ a {
 /* ///// PORTFOLIO SECTION ///// */
 
 .portfolio img {
-  height: 150px;
   object-fit: cover;
   object-position: top;
   margin: 15px 5px 25px 5px;
@@ -325,6 +324,9 @@ footer .nav {
   #aboutImg {
     width: 100vw;
   }
+  .portfolio img {
+    height: 100px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -333,6 +335,9 @@ footer .nav {
   }
   #aboutImg {
     width: 100vw;
+  }
+  .portfolio img {
+    height: 150px;
   }
 }
 
