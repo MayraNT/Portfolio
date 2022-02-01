@@ -4,6 +4,10 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  background:
+      linear-gradient(217deg, rgba(196, 129, 30), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgb(115, 162, 250), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgb(130, 253, 171), rgba(0,0,255,0) 70.71%);
 }
 
 .mainContainer {
