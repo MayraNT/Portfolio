@@ -53,7 +53,7 @@ a {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 2fr 8.5fr;
+  grid-template-rows: 2fr 8fr;
   background-color: whitesmoke;
   box-shadow: 10px 10px 5px 1px rgba(68, 68, 90, 0.233);
 }
@@ -93,6 +93,11 @@ a {
   font-family: 'Courier Prime', monospace;
   font-size: 20px;
   letter-spacing: 7px;
+}
+
+.contact-info a:hover {
+  transition: .5s ease;
+  color: rgb(98, 252, 252);
 }
 
 .main-container .history {
