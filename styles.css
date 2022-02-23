@@ -147,6 +147,25 @@ a {
   justify-content: center;
 }
 
+.portfolio span {
+  font-family: 'Halant', serif;
+}
+
+.portfolio p {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.portfolio p > a {
+  color: black;
+  transition: .25s ease;
+}
+
+.portfolio p > a:hover {
+  color: white;
+  transform: rotate(180deg);
+}
+
 /* ///// RESUME SECTION ///// */
 
 #resumeSnap {
