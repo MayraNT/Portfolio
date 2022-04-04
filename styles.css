@@ -12,7 +12,23 @@ body {
   justify-content: space-between;
 }
 
-/* ///// MAIN ///// */
+/* ------- CLASSES ------- */
+
+.round-border {
+  border-radius: 15px;
+}
+
+.card-button {
+  margin: 10px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-color: pink;
+  color: white;
+  text-decoration: none;
+}
+
+/* ------- MAIN ------- */
 
 header {
   display: flex;
@@ -24,89 +40,90 @@ main {
   display: flex;
   flex-wrap: wrap;  
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 h1 {
-  font-size: 75px;
   color: white;
-  /* transform: rotate(15deg);
-  transition: .5s ease; */
 }
 
-h1:hover {
-  transform: rotate(0deg);
-}
+/* ------- PROJECT CARDS ------- */
 
-/* ///// NEW CARD STUFF START ///// */
+.cardContainer {
+  height: 240px;
+  width: 275px;
+  position: relative;
+}
 
 .card {
-  height: 275px;
-  width: 275px;
-  background-color: sandybrown;
-  border: solid 3px black;
+  background-color: whitesmoke;
+  transition: .3s ease;
+  transform-origin: bottom right;
+  display: flex;
+  justify-content: center;
 }
 
-.img {
+.card > h4 {
+  position: absolute;
+  top: -18px;
+}
+
+.contentContainer {
   height: 100%;
   width: 100%;
+  position: relative;
+  top: -100%;
 }
 
 img {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  border: solid 3px purple;
   object-fit: cover;
+  object-position: center;
 }
 
-.content {
-  position: relative;
-  top: -175px;
-  border: solid 3px red;
+.card, .imgOverlay {
+  height: 240px;
+  width: 275px;
 }
 
-/* ///// NEW CARD STUFF END ///// */
-
-/* ///// CURRENT CARD STUFF START ///// */
-
-/* .container {
-  position: relative;
-} */
-
-/* .container .card {
-  border-radius: 4px;
-  position: relative;
-  width: 225px;
-  height: 200px;
-  background: rgba(183, 208, 253, 0.89);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
-  border: solid 2px palegreen;
-} */
-
-/* .container .card .imgBx {
-  position: relative;
-  z-index: 1;
-  border: solid 2px peru;
-} */
-
-/* .container:hover .card:hover .imgBx:hover {
-  z-index: -1;
-} */
-
-/* .container .card .content {
-  border: solid 1px pink;
-} */
-
-/* .container .card .imgBx img {
+.imgOverlay {
+  height: 100%;
   width: 100%;
-  border-radius: 4px;
-} */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+}
 
-/* ///// CURRENT CARD STUFF END ///// */
+.contentContainer:hover .imgOverlay {
+  background-color: rgba(134, 134, 134, 0.5);
+  opacity: 1;
+}
 
-/* ///// FOOTER ///// */
+.contentInfo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cardContainer:hover .card {
+  transform:  translate(0, -30px);
+  transform-origin: bottom right;
+}
+
+/* ------- FOOTER ------- */
 footer {
   display: flex;
   justify-content: center;
