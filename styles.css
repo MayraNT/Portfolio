@@ -166,6 +166,15 @@ a {
   transform: rotate(180deg);
 }
 
+#landingImg {
+  width: 46.5%;
+}
+
+#ghParagraph {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
 /* ///// RESUME SECTION ///// */
 
 #resumeSnap {
