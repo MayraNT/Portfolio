@@ -14,22 +14,27 @@
 <body>
   <div class="mainContainer">
     <header>
-      <div class="nav bar" id="topOfPage">
-        <a href="./portfolioGallery/portfolioGallery.html" class="p hover">portfolio</a>
-        <a href="./resumePage/resume.html" class="r hover">resume</a>
-        <a href="#aboutSection" class="a hover">about</a>
-        <a href="#contactSection" class="c hover">contact</a>
+      <div class="nav" id="topOfPage">
+        <div id="line"></div>
+        <a href="./portfolioGallery/portfolioGallery.html" class="p">portfolio</a>
+        <a href="./resumePage/resume.html" class="r">resume</a>
+        <a href="#aboutSection" class="a">about</a>
+        <a href="#contactSection" class="c">contact</a>
       </div>
     </header>
     <main>
       <div class="landing">
-        <span class="sectionTitle hello">hello!</span>
-        <span class="sectionTitle">I'm Mayra Téllez</span>
-        </br>
-        <span class="sectionSubTitle">Front End Web Developer</span>
-        <span class="subtitle">HTML, CSS, JavaScript, Bootstrap, React, Node.js, Express.js, SQL</span>
+        <div class="feature">
+          <span id="hello" class="sectionTitle circleFeature">hello!</span>
+          <img id="profilePic" class="circleFeature" src="./images/profilePic.png" alt="mayra tellez profile picture">
+        </div>
+        <div class="intro">
+          <span class="sectionTitle">I'm Mayra Téllez</span>
+          </br>
+          <span class="sectionSubTitle">Front End Web Developer</span>
+          <span class="subtitle">HTML, CSS, JavaScript, Bootstrap, React, Node.js, Express.js, SQL</span>
+        </div>
       </div>
-      <div id="line"></div>
       <div class="sectionsContainer">
         <section class="portfolio" id="portfolioSection">
           <span class="sectionTitle">portfolio</span>
