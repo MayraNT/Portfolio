@@ -209,7 +209,7 @@ a {
   width: 80%;
   height: 150px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: 4px;
   margin: 15px 0 25px 0;
   box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.582);
